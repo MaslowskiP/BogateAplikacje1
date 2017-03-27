@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "zad7"
+		id          = "zad8"
         version     = "1.0.0" >
 
-    <name>Kontakty</name>
-    <description>Aplikacja wyświetlająca kontakty w telefonie</description>
+    <name>SMS</name>
+    <description>Wysyłanie smsów</description>
     <author email="rombacz@op.pl">
 		Piotr Masłowski
 	</author>
