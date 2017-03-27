@@ -79,9 +79,9 @@ function onError() {
 }
 
 function gotContacts(c) {
-    console.log("Liczba kontaktów: "+c.length);
+    alert("Liczba kontaktów: "+c.length);
     for(var i=0, len=c.length; i<len; i++) {
-        console.dir(c[i]);
+        alert.dir(c[i]);
     }
 }
 	
