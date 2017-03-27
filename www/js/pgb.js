@@ -1,6 +1,6 @@
 document.addEventListener("deviceready", init, false);
 function init() {
-
+	console.log("test");
     navigator.contacts.find(
         [navigator.contacts.fieldType.displayName],
         gotContacts,
@@ -13,7 +13,7 @@ function errorHandler(e) {
 }
 
 function gotContacts(c) {
-    console.log("gotContacts, number of results "+c.length);
+    console.log("Znalazłem kontakty. Ich liczba to: "+c.length);
     for(var i=0, len=c.length; i<len; i++) {
         console.dir(c[i]);
     }
