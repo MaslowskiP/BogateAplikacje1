@@ -1,20 +1,13 @@
 var app = {
     sendSms: function() {
-        var number = document.getElementById('numberTxt').value;
-        var message = document.getElementById('messageTxt').value;
+        var number = document.getElementById('numer').value;
+        var message = document.getElementById('wiadomosc').value;
         console.log("number=" + number + ", message= " + message);
 
-        //CONFIGURATION
-        var options = {
-            replaceLineBreaks: false, // true to replace \n by a new line, false by default
-            android: {
-                intent: 'INTENT'  // send SMS with the native android SMS messaging
-                //intent: '' // send SMS without open any other app
-            }
-        };
+        var options = {replaceLineBreaks: false, android: { intent: 'INTENT'} };
 
-        var success = function () { alert('Message sent successfully'); };
-        var error = function (e) { alert('Message Failed:' + e); };
+        var success = function () { alert('Wiadomość wysłana'); };
+        var error = function (e) { alert('Błąd wysyłania wiadomości: ' + e); };
         sms.send(number, message, options, success, error);
     }
 };
