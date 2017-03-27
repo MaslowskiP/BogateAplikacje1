@@ -9,6 +9,12 @@
     <author email="rombacz@op.pl">
 		Piotr Masłowski
 	</author>
+
+	
+	<plugin name="cordova-plugin-device" spec="~1.1.4" />
+	<plugin name="cordova-plugin-dialogs" spec="~1.3.1" />
+	<plugin spec="https://github.com/apache/cordova-plugin-splashscreen.git" source="git"/>
+	
 	<platform name="android">
     
     <splash src="res/splash-land-hdpi.png" density="land-hdpi"/>
@@ -21,12 +27,8 @@
     <splash src="res/splash-port-mdpi.png" density="port-mdpi"/>
     <splash src="res/splash-port-xhdpi.png" density="port-xhdpi"/>
 	</platform>
-	
-	<plugin name="cordova-plugin-device" spec="~1.1.4" />
-	<plugin name="cordova-plugin-dialogs" spec="~1.3.1" />
-	<plugin spec="https://github.com/apache/cordova-plugin-splashscreen.git" source="git"/>
 
-	<preference name="SplashScreen" value="screen" />
+	
 	<preference name="SplashScreenDelay" value="10000" />
 	
 </widget>
