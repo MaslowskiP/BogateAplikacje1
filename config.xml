@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "zad2"
+		id          = "zad3"
         version     = "1.0.0" >
 
-    <name>My second app</name>
-    <description>My second mobile app</description>
+    <name>Wizytówka</name>
+    <description>Moja wizytówka</description>
     <author email="rombacz@op.pl">
 		Piotr Masłowski
 	</author>
