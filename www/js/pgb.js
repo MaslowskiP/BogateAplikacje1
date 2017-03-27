@@ -1,5 +1,5 @@
 function init() {
-	splashscreen.show
+	navigator.splashscreen.show();
 	document.addEventListener("deviceready",onDeviceReady, false);
 }
 
