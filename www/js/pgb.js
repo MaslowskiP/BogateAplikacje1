@@ -20,3 +20,10 @@ function deviceInfo() {
 	navigator.notification.alert(info);
 	
 }
+
+function authorInfo() {
+	
+	info = 'Hej moje imie to: Piotrek\nTo jest moja druga ap[likacja.';
+	
+	navigator.notification.alert(info);
+}
