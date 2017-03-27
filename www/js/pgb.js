@@ -5,7 +5,7 @@ function init() {
 
 function onDeviceReady() {
 	navigator.notification.beep(1);
-	contatcts();
+	
 }
 
 function deviceInfo() {
