@@ -27,10 +27,11 @@
     <splash src="res/splash-port-mdpi.png" density="port-mdpi"/>
     <splash src="res/splash-port-xhdpi.png" density="port-xhdpi"/>
 	<splash src="res/splash-port-xhdpi.png" />
+	<icon src="res/icon.png" />
 	</platform>
 
 
 	<preference name="SplashScreen" value="screen"/>
-	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="SplashScreenDelay" value="3000" />
 	
 </widget>
