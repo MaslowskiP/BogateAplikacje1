@@ -41,5 +41,5 @@ function checkConnection() {
     states[Connection.CELL]     = 'Telefoniczna sieć';
     states[Connection.NONE]     = 'Brak połączenia';
 
-    navigator.notification.alert('Connection type: ' + states[networkState]);
+    navigator.notification.alert('Typ połączenia: ' + states[networkState]);
 }
