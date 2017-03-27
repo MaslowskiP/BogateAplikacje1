@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "zad3"
+		id          = "zad4"
         version     = "1.0.0" >
 
-    <name>Wizytówka</name>
-    <description>Moja wizytówka</description>
+    <name>Network</name>
+    <description>Aplikacja pokazująca stan połączenia z Internetem</description>
     <author email="rombacz@op.pl">
 		Piotr Masłowski
 	</author>
