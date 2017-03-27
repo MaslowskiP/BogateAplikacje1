@@ -1,4 +1,5 @@
 function init() {
+	splashscreen.show
 	document.addEventListener("deviceready",onDeviceReady, false);
 }
 
