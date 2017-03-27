@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "zad4"
+		id          = "zad5"
         version     = "1.0.0" >
 
-    <name>Network</name>
-    <description>Aplikacja pokazująca stan połączenia z Internetem</description>
+    <name>Montion</name>
+    <description>Aplikacja pokazująca ruch telefonu</description>
     <author email="rombacz@op.pl">
 		Piotr Masłowski
 	</author>
