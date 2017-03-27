@@ -16,5 +16,6 @@
 	<plugin spec="https://github.com/apache/cordova-plugin-network-information.git" source="git" />
 	<plugin spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />
 	<plugin spec="https://github.com/apache/cordova-plugin-contacts.git" source="git" />
+	<plugin spec="https://github.com/cordova-sms/cordova-sms-plugin.git" source="git" />
 	
 </widget>

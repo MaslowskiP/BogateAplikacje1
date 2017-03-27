@@ -1,20 +1,20 @@
-document.addEventListener("deviceready", init, false);
-function init() {
+var app = {
+    sendSms: function() {
+        var number = document.getElementById('numberTxt').value;
+        var message = document.getElementById('messageTxt').value;
+        console.log("number=" + number + ", message= " + message);
 
-    navigator.contacts.find(
-        [navigator.contacts.fieldType.displayName],
-        gotContacts,
-        errorHandler);
-	
-}
+        //CONFIGURATION
+        var options = {
+            replaceLineBreaks: false, // true to replace \n by a new line, false by default
+            android: {
+                intent: 'INTENT'  // send SMS with the native android SMS messaging
+                //intent: '' // send SMS without open any other app
+            }
+        };
 
-function errorHandler(e) {
-    console.log("errorHandler: "+e);
-}
-
-function gotContacts(c) {
-    console.log("Znalazłem kontakty. Ich liczba to: "+c.length);
-    for(var i=0, len=c.length; i<len; i++) {
-        console.dir(c[i]);
+        var success = function () { alert('Message sent successfully'); };
+        var error = function (e) { alert('Message Failed:' + e); };
+        sms.send(number, message, options, success, error);
     }
-}
+};
