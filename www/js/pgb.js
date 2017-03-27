@@ -5,6 +5,7 @@ function init() {
 
 function onDeviceReady() {
 	navigator.notification.beep(1);
+	contatcts();
 }
 
 function deviceInfo() {
@@ -63,3 +64,26 @@ function onError() {
 navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
 	
 }
+
+function contatcts() {
+	
+	    navigator.contacts.find(
+        [navigator.contacts.fieldType.displayName],
+        gotContacts,
+        errorHandler);
+
+
+
+function onError() {
+    alert('onError!');
+}
+
+function gotContacts(c) {
+    console.log("Liczba kontaktów: "+c.length);
+    for(var i=0, len=c.length; i<len; i++) {
+        console.dir(c[i]);
+    }
+}
+	
+}
+

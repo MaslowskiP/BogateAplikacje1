@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "zad5"
+		id          = "zad7"
         version     = "1.0.0" >
 
-    <name>Montion</name>
-    <description>Aplikacja pokazująca ruch telefonu</description>
+    <name>Kontakty</name>
+    <description>Aplikacja wyświetlająca kontakty w telefonie</description>
     <author email="rombacz@op.pl">
 		Piotr Masłowski
 	</author>
@@ -15,5 +15,6 @@
 	<plugin name="cordova-plugin-dialogs" spec="~1.3.1" />
 	<plugin spec="https://github.com/apache/cordova-plugin-network-information.git" source="git" />
 	<plugin spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-contacts.git" source="git" />
 	
 </widget>
