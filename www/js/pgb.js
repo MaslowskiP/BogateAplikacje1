@@ -1,5 +1,6 @@
 function init() {
 	document.addEventListener("deviceready",onDeviceReady, false);
+	navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
 }
 
 function onDeviceReady() {
@@ -43,3 +44,15 @@ function checkConnection() {
 
     navigator.notification.alert('Typ połączenia: ' + states[networkState]);
 }
+
+function onSuccess(acceleration) {
+    alert('Acceleration X: ' + acceleration.x + '\n' +
+          'Acceleration Y: ' + acceleration.y + '\n' +
+          'Acceleration Z: ' + acceleration.z + '\n' +
+          'Timestamp: '      + acceleration.timestamp + '\n');
+}
+
+function onError() {
+    alert('onError!');
+}
+
